@@ -1,15 +1,12 @@
 import React from "react";
 
-function Links() {
-
-  const bio = props.bio
+function Links(props) {
 
   return (
     <>
       <h3>Links</h3>
-      <a></a>
-      <a></a>
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
+      <a href={props.github}>{props.github}</a>
+      <a href={props.linkedin}>{props.linkedin}</a>
     </>
   );
 }
